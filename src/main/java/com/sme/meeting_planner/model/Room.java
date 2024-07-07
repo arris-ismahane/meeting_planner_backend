@@ -2,7 +2,6 @@ package com.sme.meeting_planner.model;
 
 import java.util.List;
 
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToMany;
 import lombok.AllArgsConstructor;
@@ -21,6 +20,6 @@ public class Room extends BasicEntity {
     private String name;
     private int capacity;
 
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany
     private List<Equipement> initialEquipments;
 }
