@@ -1,0 +1,13 @@
+services:
+  db:
+    image: postgres:14.5-bullseye
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=planner
+      - POSTGRES_PASSWORD=pass_planner
+      - POSTGRES_DB=meeting_planner
+    volumes:
+      - db:/var/lib/postgresql/data
+volumes:
+  db:

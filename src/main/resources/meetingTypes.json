@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "type": "VC",
+    "requiredEquipements": [
+      {
+        "id": 2,
+        "name": "Ecran"
+      },
+      {
+        "id": 1,
+        "name": "Pieuvre"
+      },
+      {
+        "id": 3,
+        "name": "Webcam"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "type": "RC",
+    "requiredEquipements": [
+      {
+        "id": 2,
+        "name": "Ecran"
+      },
+      {
+        "id": 4,
+        "name": "Tableau"
+      },
+      {
+        "id": 3,
+        "name": "Webcam"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "type": "RS",
+    "requiredEquipements": []
+  },
+  {
+    "id": 4,
+    "type": "SPEC",
+    "requiredEquipements": [
+      {
+        "id": 4,
+        "name": "Tableau"
+      }
+    ]
+  }
+]
