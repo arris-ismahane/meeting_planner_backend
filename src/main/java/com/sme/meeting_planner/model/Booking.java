@@ -2,7 +2,6 @@ package com.sme.meeting_planner.model;
 
 import java.util.List;
 
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
@@ -22,11 +21,11 @@ public class Booking extends BasicEntity {
     private String name;
     private long startDate;
     private long endDate;
-    @ManyToOne()
+    @ManyToOne
     private MeetingRequirement type;
     private int nbParticipants;
-    @ManyToOne()
+    @ManyToOne
     private Room room;
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany
     private List<SharedEquipment> bookedEquipements;
 }
